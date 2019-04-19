@@ -2,7 +2,7 @@ class CashRegister
   attr_reader :total, :discount, :items, :item_last_scanned
 
   def initialize(discount = 0)
-    @total = total
+    @total = 0
     @discount = discount
     @items = []
   end
