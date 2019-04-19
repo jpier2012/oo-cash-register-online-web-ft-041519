@@ -40,5 +40,7 @@ puts cash
 
 cash.add_item("fruit", 2.00, 3)
 cash.apply_discount
+puts cash.total
+cash.void_last_transaction
 
 puts cash.total
