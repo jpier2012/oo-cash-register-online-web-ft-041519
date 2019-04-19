@@ -31,3 +31,5 @@ end
 cash = CashRegister.new(20)
 
 cash.add_item("fruit", 2.00, 3)
+
+puts cash.total
