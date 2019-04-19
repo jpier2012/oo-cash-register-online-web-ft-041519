@@ -32,10 +32,10 @@ class CashRegister
   end
 end
 
-cash = CashRegister.new(20)
-
-puts cash
-
-cash.add_item("fruit", 2.00, 3)
-
-puts cash.total
+# cash = CashRegister.new(20)
+# 
+# puts cash
+# 
+# cash.add_item("fruit", 2.00, 3)
+# 
+# puts cash.total
