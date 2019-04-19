@@ -15,6 +15,7 @@ class CashRegister
 
   def apply_discount
     @total * (1 + @discount)
+    @discount == 0 ? puts "There is no discount to apply." : nil
   end
 
   def total
@@ -22,6 +23,6 @@ class CashRegister
   end
 
   def void_last_transaction
-
+    total -= @item_last_scanned[1] * @item_last_scanned[2]
   end
 end
