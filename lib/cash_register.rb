@@ -4,7 +4,7 @@ class CashRegister
     @discount = discount
     @items = []
   end
-  
+
   attr_reader :total, :discount, :items, :item_last_scanned
 
 
