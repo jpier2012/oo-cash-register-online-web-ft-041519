@@ -13,7 +13,7 @@ class CashRegister
 
   def add_item(item, price, quantity = 1)
     self.items << item
-    @item_last_scanned = @items[-1]
+    @item_last_scanned = self.items[-1]
   end
 
   def apply_discount
