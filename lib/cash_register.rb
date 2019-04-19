@@ -18,8 +18,11 @@ class CashRegister
   end
 
   def apply_discount
-
+  end
+  
   def total
     @total
   end
 end
+
+
