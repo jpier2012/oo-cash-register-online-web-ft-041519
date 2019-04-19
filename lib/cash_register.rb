@@ -13,6 +13,10 @@ class CashRegister
     @item_last_scanned = self.items[-1]
   end
 
+  def items
+    @items   
+  end
+
   def apply_discount
     @total * (1 + @discount)
   end
