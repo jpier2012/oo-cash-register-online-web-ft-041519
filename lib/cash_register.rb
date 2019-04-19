@@ -1,6 +1,6 @@
 class CashRegister
   @items = []
-  @last_item_scanned = @items[-1]
+  @item_last_scanned = @items[-1]
 
   attr_reader :total, :discount
 
