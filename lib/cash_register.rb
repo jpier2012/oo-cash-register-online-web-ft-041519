@@ -31,7 +31,7 @@ class CashRegister
     @items.pop
   end
 
-  binding.pry
+  #binding.pry
 end
 
 # cash = CashRegister.new(20)
