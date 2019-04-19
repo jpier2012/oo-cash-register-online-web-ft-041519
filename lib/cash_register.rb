@@ -10,7 +10,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     @items << item
     @item_last_scanned = [item, price, quantity]
-    @total += price * quantity
+    @total += price.to_f * quantity
   end
 
   def apply_discount
