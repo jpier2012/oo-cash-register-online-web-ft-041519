@@ -5,7 +5,7 @@ class CashRegister
     @items = []
   end
 
-  attr_reader :discount, :items, :item_last_scanned
+  attr_accessor :total, :discount, :items, :item_last_scanned
 
   def add_item(item, price, quantity = 1)
     @items << item
