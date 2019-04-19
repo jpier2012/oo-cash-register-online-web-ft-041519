@@ -22,10 +22,6 @@ class CashRegister
     end
   end
 
-  def total=(total)
-    @total = total
-  end
-
   def void_last_transaction
     total -= @item_last_scanned[1] * @item_last_scanned[2]
     @items.pop
@@ -33,9 +29,9 @@ class CashRegister
 end
 
 # cash = CashRegister.new(20)
-#
+# 
 # puts cash
-#
+# 
 # cash.add_item("fruit", 2.00, 3)
-#
+# 
 # puts cash.total
