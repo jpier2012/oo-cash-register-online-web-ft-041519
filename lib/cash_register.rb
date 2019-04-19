@@ -7,7 +7,6 @@ class CashRegister
 
   attr_reader :total, :discount, :items, :item_last_scanned
 
-
   def add_item(item, price, quantity = 1)
     @items << item
     @item_last_scanned = [item, price, quantity]
