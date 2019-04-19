@@ -8,7 +8,7 @@ class CashRegister
   attr_accessor :total, :discount, :items, :item_last_scanned
 
   def add_item(item, price, quantity = 1)
-    @items << item
+    quantity.do @items << item
     @item_last_scanned = [item, price, quantity]
     @total += price.to_f * quantity
   end
