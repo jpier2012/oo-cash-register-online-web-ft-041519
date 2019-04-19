@@ -1,12 +1,10 @@
 class CashRegister
-  @items = []
-  @item_last_scanned = @items[-1]
-
-  attr_reader :total, :discount
+  attr_reader :total, :discount, :items, :item_last_scanned
 
   def initialize(total = 0, discount = 0)
     @total = total
     @discount = discount
+    @items = []
   end
 
   def self.items
@@ -14,7 +12,8 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 1)
-
+    self.items << item
+    @item_last_scanned = @items[-1]
   end
 
   def apply_discount
