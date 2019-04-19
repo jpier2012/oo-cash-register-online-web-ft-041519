@@ -7,10 +7,6 @@ class CashRegister
     @items = []
   end
 
-  def self.items
-    @items
-  end
-
   def add_item(item, price, quantity = 1)
     self.items << item
     @item_last_scanned = self.items[-1]
