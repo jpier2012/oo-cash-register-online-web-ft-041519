@@ -14,9 +14,13 @@ class CashRegister
   end
 
   def apply_discount
-    @discount == 0 ? puts "There is no discount to apply." : nil
+    
     @total *= (1 + @discount)
-    puts "After the discount, the total comes to #{@total}."
+    if @discount == 0
+      puts "There is no discount to apply."
+    else
+     "After the discount, the total comes to #{@total}."
+   end
   end
 
   def total
