@@ -1,6 +1,6 @@
 class CashRegister
-  @@items = []
-  @@last_item_scanned
+  @items = []
+  @last_item_scanned
 
   attr_reader :total, :discount
 
@@ -13,7 +13,7 @@ class CashRegister
     @@items
   end
 
-  def add_item(item, price)
+  def add_item(item, price, quantity = 1)
 
   end
 
