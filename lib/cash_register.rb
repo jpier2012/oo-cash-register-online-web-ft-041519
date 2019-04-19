@@ -5,7 +5,7 @@ class CashRegister
     @items = []
   end
 
-  attr_reader :total, :discount, :items, :item_last_scanned
+  attr_reader :discount, :items, :item_last_scanned
 
   def add_item(item, price, quantity = 1)
     @items << item
@@ -20,6 +20,10 @@ class CashRegister
       @total *= (1 + @discount)
       "After the discount, the total comes to #{@total}."
     end
+  end
+
+  def total=(total)
+    @total = total
   end
 
   def void_last_transaction
