@@ -13,7 +13,7 @@ class CashRegister
     quantity.times do
       @items << item
     end
-    @item_last_scanned = [item, price, quantity]
+    @item_last_scanned = [item, price]
     @total += price.to_f * quantity
   end
 
