@@ -14,8 +14,8 @@ class CashRegister
   end
 
   def apply_discount
-    @total * (1 + @discount)
     @discount == 0 ? puts "There is no discount to apply." : nil
+    @total * (1 + @discount)
   end
 
   def total
