@@ -9,7 +9,7 @@ class CashRegister
 
   def add_item(item, price, quantity = 1)
     @items << item
-    @item_last_scanned = self.items[-1]
+    @item_last_scanned = [item, price, quantity]
     @total += price * quantity
   end
 
